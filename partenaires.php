@@ -45,7 +45,7 @@
                     </li>
 
                     <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-3"><img src="img/partenaires/beinsportlogo.png"></a>
+                        <a class="thumbnail" id="carousel-selector-3"><img src="img/partenaires/Beinsportlogo.png"></a>
                     </li>
 
                     <li class="col-sm-3">
@@ -81,7 +81,7 @@
                    
                 </ul>
             </div>
-            <div><a class="thumbnail-official" target="_blank" href="http//www.go-sport.com"><img src="img/logogosport.png" style="padding:50px"></a></div>
+            <div><a class="thumbnail-official" target="_blank" href="http://www.go-sport.com/"><img src="img/logogosport.png" style="padding:50px"></a></div>
            
         </div>
 

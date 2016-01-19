@@ -90,7 +90,7 @@
 				<!-- Our Headquarters -->
 				<div class="row text-left">
 					<div class="col-xs-12 col-sm-12 col-md-5 center" >
-						<img class="img-responsive img-rounded" src="img/montageoriginal.PNG" alt="" />
+						<img class="img-responsive img-rounded" src="img/montageoriginal.png" alt="" />
 					</div>
 					     <div class="col-xs-12 col-sm-12 col-md-7" >
 							<p style="color= aliceblue;">La ville est la capitale des Zenata qui furent introduit lors de la
@@ -138,7 +138,7 @@
 				</div>
 				<div class="row margin-top">
 					<div class="col-xs-12 col-sm-6 col-md-5">
-						<img class="img-responsive img-rounded center" src="img/bouznika2.PNG" alt="" />
+						<img class="img-responsive img-rounded center" src="img/bouznika2.png" alt="" />
 					</div>
 				</div>
 
