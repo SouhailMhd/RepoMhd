@@ -1,0 +1,980 @@
+/*
+    Template Name : Hosty
+    Author: Art Rage ( M.I.Daniel )
+    Version: v1.0 Html
+*/
+
+/* Style In style.css :
+    1. CSS Reset
+    2. Bootstrap fix for WinPhone 8 and IE10 
+    3. Typography
+    4. Basic Document Style
+    5. Basic Layout Style
+    6. Tipper
+    7. Flexslider
+    8. Preloader
+    9. Header
+    10. What We Offer
+    11. Pricing
+    12. Testimonials
+    13. Other Details
+    14. Footer
+    15. About Pages
+    16. Support Pages
+    17. Form
+*/
+
+/* ==================================================================
+CSS Reset
+================================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ==================================================================
+Bootstrap fix for WinPhone 8 and IE10 
+================================================================== */
+
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+/* ==================================================================
+Typography
+================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #FFA07A;
+}
+
+h1 {background-color: #333;
+    font-size: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: azure;
+}
+
+h2 {
+    font-size: 28px;
+    padding-bottom: 18px;
+}
+
+h3 {
+    font-size: 24px;
+    padding-bottom: 16px;
+}
+
+h4 {
+    font-size: 22px;
+    padding-bottom: 14px;
+}
+
+h5 {
+    font-size: 9px;
+    padding-bottom: 12px;
+    color:aliceblue;
+}
+
+h6 {
+        font-size: larger;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+
+}
+
+
+p {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 23px;
+    letter-spacing: 1.5px;
+    color: aliceblue;
+}
+
+p.narrow {
+    color:black;
+    width: 80%;
+    margin: 0px auto;
+}
+
+a:focus , a:link, a:active {
+    outline:none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a.link-text {
+    color: #FFA07A;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
+
+a.link-text:hover {
+    color: #989898;
+}
+
+em {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    color: rgba(225, 225, 225, 0.9);
+}
+
+/* ==================================================================
+Basic Document Style
+================================================================== */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/* ==================================================================
+Basic Layout Style
+================================================================== */
+
+section {
+    position: relative;
+    text-align: center;
+    background-color: #F8F8F8;
+}
+
+section::before,
+section::after {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+}
+
+/* Section Title */
+.section-title h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2e3138;
+    padding-bottom: 50px;
+}
+
+.section-title h1:after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #FFA07A;
+    margin: 20px auto 0px;
+    display: block;
+}
+
+.section-title h6 {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FFA07A;
+    padding-bottom: 10px;
+}
+
+/* Dark Background */
+.dark-background {
+    background-color: #2e3138;
+}
+
+/* Section Padding */
+.padding {
+    background-color: #333;
+    padding: 80px 0px;
+}
+
+/* Classes */
+.margin-top {
+    margin-top: 50px;
+}
+
+.sem-margin-top {
+    margin-top: 25px;
+}
+
+.center {
+    margin: 0px auto;
+    display: block;
+}
+
+/* Parallax */
+.parallax {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    /*background-image: url(img/image.jpg);*/
+}
+.discours{
+        font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: cyan;
+}
+.auteur{
+    padding-bottom: 10px;
+    color : floralwhite;
+}
+/* Btn Standart */
+.btn-standart {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 20px 50px;
+    background-color: #FFA07A;
+    border: 1px solid #FFA07A;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.btn-standart:hover {
+    color: #FFA07A;
+    background-color: transparent;
+}
+
+/* Start Separation Bar */
+.sep {
+    margin: 50px auto;
+}
+
+.sep div {
+    display: inline-block;
+}
+
+.sep div:first-child,
+.sep div:last-child {
+    width: 20%;
+    height: 1px;
+    background-color: #C3C3C3;
+}
+
+.sep div:nth-child(2) {
+    width: 10%;
+    height: 1px;
+    background-color: #FFA07A;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    margin: 0px 5px;
+}
+
+/* Dark Overley */
+.dark-overley {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 80px 0px;
+}
+
+/* ==================================================================
+Tipper
+================================================================== */
+
+.tipper-content {
+    text-transform: uppercase;
+}
+
+/* ==================================================================
+Flexslider
+================================================================== */
+
+.flexslider {
+    margin-bottom: 0px !important;
+    border: none !important;
+    border-radius: none !important;
+    -webkit-border-radius: none !important;
+    -moz-border-radius: none !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+.flex-control-nav {
+    position: relative !important;
+    bottom: 0px !important;
+    padding: 50px 0px 0px;
+}
+
+.flex-control-paging li a {
+    position: relative;
+    width: 25px; 
+    height: 25px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.flex-control-paging li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.flex-control-paging li a:hover::before {
+    height: 100%;
+}
+
+.flex-control-paging li a:hover {
+    background-color: transparent;
+}
+
+.flex-control-paging li a.flex-active {
+    background: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* ==================================================================
+Preloader
+================================================================== */
+
+.spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:aliceblue;
+    z-index: 999;
+}
+
+.cube {
+    width: 60px;
+    height: 60px;
+    background-color: #708090;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 50%
+    right:50%;
+    -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+    animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes rotateplane {
+    0% { 
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+
+/* ==================================================================
+Header
+================================================================== */
+
+#main-header {
+    background-color: #333;
+}
+
+/* Navbar */
+.navbar {
+	width: 100%;
+	background-color: #2e3138;
+	border-bottom: 1px solid #FFA07A;
+	box-shadow: 0px 0px 5px #3F3F3F;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    z-index: 100;
+}
+
+.pages-link {
+    color: #FFA07A !important;
+}
+
+.nav li a {
+    position: relative;
+	font-size: 13px;
+    text-transform: uppercase;
+	color: #ffffff;
+	padding: 30px 1.4em;
+	transition: color 0.5s;
+	-webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	-ms-transition: color 0.5s;
+	-o-transition: color 0.5s;
+}
+
+
+.nav li a:hover {
+    color: #FFA07A !important;
+    background-color: transparent !important;
+}
+
+.navbar-toggle span {
+    background-color: #ffffff;
+}
+
+.navbar .navbar-collapse { /* For Callapse Container, The Text To Be Centered And Other Fixes */
+    text-align: center;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.navbar-collapse { /* For Collapse Button, Height Fix */
+    float: right;
+    max-height: 100%;
+}
+
+@media (max-width: 768px) { /* For Centered Navbar */
+    .navbar-collapse {
+        float: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+  .nav li a {
+        padding: 25px 0.5em;
+  }
+}
+
+/* Navbar Logo */
+.navbar-brand {
+	font-family: 'Audiowide', cursive;
+	font-size: 30px;
+	font-weight: 400;
+    /*text-transform: uppercase;*/
+	color: #FFA07A;
+	padding: 30px;
+}
+
+.navbar-brand:hover {
+	color: #FFA07A;
+}
+
+/* Intro */
+#intro {
+        background-color: whitesmoke;
+	    padding: 150px 0px;
+}
+
+#intro > * {
+	display: block;
+        color: black;
+    font-weight: bold;
+
+}
+
+#intro span:first-child {
+	font-family: 'Lato', sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+    text-transform: uppercase;
+	letter-spacing: 2px;
+    color: azure;
+	
+}
+
+#intro span:last-child {
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 25px;
+	letter-spacing: 1.5px;
+	width: 80%;
+	margin: 20px auto 0px;
+	color: #F2F2F2;
+}
+
+/* ==================================================================
+What We Offer
+================================================================== */
+
+/* Style For This Section */
+.ss-style-foldedcorner::before,
+.ss-style-foldedcorner::after {
+    top: -100px;
+    width: 100px;
+    height: 100px;
+}
+
+.ss-style-foldedcorner::before {
+    right: 0;
+    background-image: -webkit-linear-gradient(top left, #ffffff 50%, #F8F8F8 50%);
+    background-image: linear-gradient(315deg, #F8F8F8 50%, #ffffff 50%);
+}
+
+.ss-style-foldedcorner::after {
+    right: 100px;
+    background-image: -webkit-linear-gradient(top left, transparent 50%, #EDEDED 50%);
+    background-image: linear-gradient(315deg, #EDEDED 50%, transparent 50%);
+}
+
+.offers i {
+    font-size: 25px;
+    color: #FFA07A;
+    padding-bottom: 10px;
+}
+
+.offers div {
+    border: 1px solid #F8F8F8;
+    padding: 20px 0px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    cursor: pointer;
+}
+
+.offers div:hover {
+    border: 1px solid #EEEEEE;
+    background-color: #ffffff;
+}
+
+/* More Features */
+#more-features {
+    position: relative;
+}
+
+#more-features:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px; 
+    left: 50%;
+    margin-left: -25px;
+    background-color: #FE9F79;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}
+
+/* ==================================================================
+Pricing
+================================================================== */
+
+#pricing-box {
+    font-size: 14px;
+}
+
+/* Pricing Box Header */
+.pricing-box-header {
+    color: #ffffff;
+    padding: 40px 0px;
+    background-image: url(../img/Pricing-Box-Header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Pricing Box Body */
+.pricing-box-body li {
+    color: #989898;
+    border-left: 1px solid #DFDFDF;
+    border-right: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+    padding: 25px 0px;
+}
+
+/* Pricing Box Price */
+.price {
+    color: #ffffff !important;
+    padding: 40px 0px;
+    background-color: #FFA07A;
+}
+
+/* Order Button */
+.order {
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 33px;
+    color: #ffffff;
+    padding: 10px 20px;
+    background-color: #2e3138;
+}
+
+.order:hover {
+    color: #ffffff;
+}
+
+/* Owl Carousel */
+#clients-carousel div img {
+  width: 200px;
+}
+
+/* ==================================================================
+Testimonials
+================================================================== */
+
+#testimonials {
+    text-align: center;
+    height: auto;
+    background-image: url(http://placehold.it/1800x977);
+}
+
+#testimonials img {
+    width: 150px;
+    height: 150px;
+    border: 10px solid rgba(0, 0, 0, 0.5);
+}
+
+#testimonials p {
+    color: rgba(225, 225, 225, 0.9);
+}
+
+#testimonials span {
+    font-size: 13px;
+    line-height: 50px;
+    color: rgba(225, 225, 225, 0.9);
+}
+
+/* ==================================================================
+Other Details
+================================================================== */
+
+/* Punch Text */
+#punch-text {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.s2{
+
+    margin: auto 10px;
+    width: 20%;
+    padding: 5px 5px 10px 25px;
+
+}
+
+.s3{
+
+    margin: auto -75px;
+    width: 20%;
+    padding: 5px 5px 10px 25px;
+
+}
+.s1{
+    max-width: 70px;
+    max-height:70px;
+    
+    margin: auto 10px;
+
+    padding: 5px 5px 10px 25px;
+
+}
+.partin {
+    height: 50px;
+    width: 100px;
+}
+/* Other Details */
+#other-details .section-title h1:after {
+    margin: 20px 0px 0px;
+}
+/*sponsors*/
+.sponsors{
+    background-color: #2E3138;
+
+     width:100%;
+}
+/* Google Map */
+#google-map {
+    position: relative;
+    width: 100%;
+    height: 500px;
+   /* overflow: hidden;*/
+       background-color: rgba(0, 0, 0, 0.7);
+}
+
+#map-canvas {
+    width: 100%;
+    height: 500px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+/* Google Map Btn */
+#google-map-btn {
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2e3138;
+    background-color: #ffffff;
+    padding: 50px 0px;
+    cursor: pointer;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+#google-map-btn:hover {
+    color: #ffffff;
+    background-color: #2e3138;
+}
+
+/* ==================================================================
+Footer
+================================================================== */
+
+#main-footer {
+    text-align: center;
+    padding: 25px 0px;
+}
+
+#main-footer p {
+    color: #989da8;
+}
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+.thumbnail-official
+{
+    max-width: 100%
+    display: -webkit-box;
+        padding-top: 29px;
+
+}
+.thumbnail {
+    display: -webkit-box;
+    height: 50px;
+    padding: 0;
+    max-width: 100%;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}
+/* ==================================================================
+About Pages
+================================================================== */
+
+/* Most Important Members */
+.members ul {
+    margin: 10px 0px;
+}
+
+.members ul li {
+    display: inline-block;
+}
+
+.members ul li a i {
+    font-size: 20px;
+    line-height: 40px;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    background-color: #2e3138;
+    border: 1px solid #2e3138;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.members ul li a i:hover {
+    color: #2e3138;
+    background-color: transparent;
+}
+
+.members img {
+    position: relative;
+    cursor: pointer;
+}
+
+.members img:hover {
+    opacity: 0.8;
+}
+
+
+/* ==================================================================
+Support Pages
+================================================================== */
+
+/* Support Accordion */
+#accordion .panel-heading {
+    background-color: #2e3138;
+}
+
+#accordion .panel-heading:hover {
+    background-color: #131417;
+}
+
+#accordion .panel-title {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 10px 0px;
+}
+
+#accordion .panel-body {
+    border: 1px solid #2e3138;
+    padding: 25px 0px;
+}
+
+/* ==================================================================
+Form
+================================================================== */
+
+.form .form-group > * {
+    display: block;
+    margin: 0px auto;
+}
+
+.form .form-group label {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 15px 0px;
+}
+
+.form .form-group input {
+    height: 50px;
+}
+
+.form .form-group input,
+.form .form-group textarea {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    width: 50%;
+    border: 1px solid #2e3138;
+    border-radius: 5px;
+    background-color: #2e3138;
+}
+
+.form button {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #FFA07A;
+    border: 1px solid #FFA07A;
+    border-radius: 5px;
+    padding: 15px 40px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.form button:hover {
+    color: #FFA07A;
+    background-color: transparent;
+}
+
+/* Form Plceholder Color ( Cross Browser ) */
+.form .form-group input::-webkit-input-placeholder,
+.form .form-group textarea::-webkit-input-placeholder {
+    color: #ffffff;
+}
+ 
+.form .form-group input:-moz-placeholder,
+.form .form-group textarea:-moz-placeholder {
+    color: #ffffff;
+}
+ 
+.form .form-group input::-moz-placeholder,
+.form .form-group textarea::-moz-placeholder {
+    color: #ffffff;
+}
+ 
+.form .form-group input:-ms-input-placeholder,
+.form .form-group textarea:-ms-input-placeholder {
+    color: #ffffff;
+}
