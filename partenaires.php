@@ -45,11 +45,11 @@
                     </li>
 
                     <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-3"><img src="img/partenaires/Beinsportlogo.png"></a>
+                        <a class="thumbnail" id="carousel-selector-3"><img src="img/partenaires/beinsportlogo.png"></a>
                     </li>
 
                     <li class="col-sm-3">
-                        <a class="thumbnail" id="carousel-selector-4"><img src="img/partenaires/FRMAlogo.png"></a>
+                        <a class="thumbnail" id="carousel-selector-4"><img src="img/partenaires/frmalogo.png"></a>
                     </li>
 
                     <li class="col-sm-3">

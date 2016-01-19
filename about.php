@@ -90,7 +90,7 @@
 				<!-- Our Headquarters -->
 				<div class="row text-left">
 					<div class="col-xs-12 col-sm-12 col-md-5">
-						<img class="img-responsive img-rounded" src="img/eventpic.PNG" alt="" />
+						<img class="img-responsive img-rounded" src="img/eventpic.png" alt="" />
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-7">
 						<p>Un public familial et sportif</p>
@@ -110,7 +110,7 @@
 				<!-- Best Top Technologies -->
 				<div class="row">
 					<div class="col-xs-12 col-sm-6 col-md-5">
-						<img class="img-responsive img-rounded center" src="img/gosportmag1.PNG" alt="" />
+						<img class="img-responsive img-rounded center" src="img/gosportmag1.png" alt="" />
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-7 text-left">
 						<p>Sed hendrerit tortor in malesuada pharetra. Cras turpis velit, tempor sit amet neque at, facilisis eleifend ante. Praesent faucibus sit amet augue sed ultricies. Aenean cursus nunc non odio pretium, elementum viverra felis tincidunt. Pellentesque magna mauris, condimentum et dapibus id, placerat sit amet purus. In in pulvinar felis, et rhoncus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis pretium erat. Nulla mauris magna, tristique a pretium sed, lobortis vel diam. Donec pulvinar felis at congue malesuada. Proin feugiat magna id dui dictum, in imperdiet eros congue. Nam id diam luctus, tincidunt purus convallis, lobortis metus.
@@ -123,7 +123,7 @@
                         Nullam sit amet augue aliquet, fermentum mi sed, lobortis est. Duis interdum mi sed bibendum congue. In nec pulvinar mi. In at mollis quam, a cursus arcu. Proin blandit dolor ut metus suscipit pharetra. Phasellus tempor imperdiet urna, sit amet gravida ante luctus a. Nam rhoncus porta porttitor. Integer interdum eget mi at convallis. Suspendisse interdum, nibh sit amet tincidunt scelerisque, magna lacus cursus magna, eget interdum dui velit quis velit. Nam sed scelerisque orci.</p>
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-5">
-						<img class="img-responsive img-rounded center" src="img/gosportmag2.PNG" alt="" />
+						<img class="img-responsive img-rounded center" src="img/gosportmag2.png" alt="" />
 					</div>
 				</div>
 
